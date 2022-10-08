@@ -3,7 +3,7 @@ import type { GatsbyConfig } from 'gatsby';
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `gatsby-netlify-cms-starter-template`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://github.com/lilpolymath/gatsby-netlify-cms-starter-template`,
   },
 
   graphqlTypegen: true,
