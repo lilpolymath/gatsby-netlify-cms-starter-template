@@ -3,6 +3,8 @@ import type { GatsbyConfig } from 'gatsby';
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `gatsby-netlify-cms-starter-template`,
+    description: "Gatsby Netlify CMS Starter Template",
+    author:"@lilpolymath",
     siteUrl: `https://github.com/lilpolymath/gatsby-netlify-cms-starter-template`,
   },
 
@@ -18,7 +20,15 @@ const config: GatsbyConfig = {
         icon: 'src/images/icon.png',
       },
     },
-    'gatsby-plugin-mdx',
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: ['.mdx', '.md'],
+        defaultLayouts: {
+          default: require.resolve(`./src/page-templates/entry.tsx`),
+        },
+      },
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -34,6 +44,14 @@ const config: GatsbyConfig = {
       options: {
         name: 'pages',
         path: './src/pages/',
+      },
+      __key: 'pages',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'blog',
+        path: './content/blog',
       },
       __key: 'pages',
     },

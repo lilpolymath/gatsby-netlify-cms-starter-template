@@ -1,7 +1,6 @@
 import * as React from 'react';
-
-import '../styles/index.scss';
 import Nav from './Nav';
+import '../styles/index.scss';
 
 const Layout: React.FC = ({ children }) => (
   <div className='container'>
