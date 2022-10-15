@@ -3,8 +3,8 @@ import type { GatsbyConfig } from 'gatsby';
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `gatsby-netlify-cms-starter-template`,
-    description: "Gatsby Netlify CMS Starter Template",
-    author:"@lilpolymath",
+    description: 'Gatsby Netlify CMS Starter Template',
+    author: '@lilpolymath',
     siteUrl: `https://github.com/lilpolymath/gatsby-netlify-cms-starter-template`,
   },
 
